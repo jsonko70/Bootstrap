@@ -1,0 +1,152 @@
+body {
+  background: url("../images/background.jpg")top / contain repeat;
+  margin: 0px;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+  width: 260px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  top: 35%;
+  color: black;
+}
+
+h4 {
+  color: black;
+}
+
+option {
+  color: black;
+}
+
+#banner {
+  background: URL("../images/marquee blue.png") top / contain no-repeat;
+  width: 260px;
+  height: 130px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+header {
+  margin: 0px;
+  background-image: URL("../images/movie film border.jpg");
+  background-size: 120px 100px;
+  height: 100px;
+  top: 0px;
+  width: 100%;
+}
+
+.navbar-primary ul {
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  width: 100%;
+  background-color: #30261a;
+}
+
+.navbar-primary ul li {
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  float: right;
+}
+
+.navbar-primary a {
+  text-decoration: none;
+  color: white;
+}
+
+#btnLogin {
+  margin-right: 4px;
+  color: #fff;
+  border-radius: 25px;
+  background-color: transparent;
+  position: relative;
+  border: 0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 1px #fff;
+  cursor: pointer;
+}
+
+#btnSearch {
+  background: URL("../images/magnifying glass.png") top / contain no-repeat;
+  border-style: none;
+  width: 20px;
+  cursor: pointer;
+}
+
+.movie-list-section {
+  margin-top: 5px;
+}
+
+.movie-list-section ol {
+  display: table;
+  padding: 0px 0px 50px 100px;
+  list-style-type: none;
+  counter-reset: li;
+}
+
+.movie-list-section ol>li {
+  counter-increment: step-counter;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 20px;
+  width: 300px;
+}
+
+.movie-list-section ol>div>li::before {
+  content: ""counter(li) "-"" ";
+  position: absolute;
+  counter-increment: li;
+  left: 0%;
+  top: 0px;
+  font-size: 1em;
+}
+
+.movie-list-section ul {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+#quote {
+  background-color: #e6e4d8;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+footer {
+  background-image: URL("../images/movie film border.jpg");
+  background-size: 150px 100px;
+  height: 30px;
+  background: black;
+  text-align: center;
+}
+
+.other-lists {
+  background-color: #e6e4d8;
+  border-top: 5px solid #30261a;
+}
+
+.other-lists ul {
+  list-style-type: none;
+  padding: 0px;
+}
